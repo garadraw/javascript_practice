@@ -10,7 +10,7 @@ const Hello = (props) =>
 	  </div>
 	)
 }
-  
+
 const App = () =>
 {
 	console.log('Reached the App Component')
@@ -19,17 +19,16 @@ const App = () =>
 	// const age = 10
 
 	return (
-	  <div>
+	<>
 		<h1>Greetings</h1>
-		<Hello name='George' age={13 + 54} />
+		<Hello name='George' age={13 + 54} />,
         {/* <Hello name={name} age={age} /> */}
-		
-
-	  </div>
+		<Footer />
+	</>
 	)
 }
 
-const footer = () => 
+const Footer = () => 
 {
 	return (
 		<div>
